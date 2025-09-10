@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Digital Garden: Add Plants</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Responsive design for mobile devices -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Link to external CSS file for styling -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body style="text-align: center">
+    <form>
+      <h2>Add A New Plant</h2>
+      <label for="plant-image">Plant Image: </label>
+      <i class="fa fa-camera"></i>
+      <br />
+
+      <label for="plant-name">Plant Name: </label>
+      <input type="text" id="plant-name" name="plant-name" required />
+      <br />
+
+      <label for="plant-type">Plant Type: </label>
+      <select id="plant-type" name="plant-type" required>
+        <option value="" disabled selected>Select Type</option>
+        <option value="vegetable">Vegetable</option>
+        <option value="fruit">Fruit</option>
+        <option value="herb">Herb</option>
+      </select>
+      <br />
+
+      <label for="plant-date">Date Planted: </label>
+      <input type="date" id="plant-date" name="plant-date" required />
+      <br />
+
+      <label for="plant-notes">Notes: </label>
+      <textarea
+        id="plant-notes"
+        name="plant-notes"
+        placeholder="This plant is very yummy!"
+      ></textarea>
+      <br />
+      <button onclick="location.href='plants.html'">Go Back</button>
+      <button type="submit" onclick="alert('Plant added!');">Add Plant</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Digital Garden: Plants</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Responsive design for mobile devices -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Link to external CSS file for styling -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css" />
+  </head>
+
+  <body>
+    <nav class="navbar-container">
+      <a href="index.html">Home</a>
+      <a href="plants.html" class="active-link">Plants</a>
+      <a href="about.html">About</a>
+    </nav>
+
+    <h1>&#127793; Plant Encyclopedia</h1>
+
+    <div class="container">
+      <div
+        class="card"
+        onclick="document.getElementById('id01').style.display='block'"
+      >
+        <img src="/images/tomato.jpg" alt="Tomato" />
+        <h4><b>Tomato</b></h4>
+        <p>Nightshade Family</p>
+      </div>
+
+      <div
+        class="card"
+        onclick="document.getElementById('id02').style.display='block'"
+      >
+        <img src="/images/cucumber.jpeg" alt="Cucumber" />
+        <h4><b>Cucumber</b></h4>
+        <p>Cucurbits Family</p>
+      </div>
+
+      <div
+        class="card"
+        onclick="document.getElementById('id03').style.display='block'"
+      >
+        <img src="/images/bell_pepper.jpg" alt="Bell Pepper" />
+        <h4><b>Bell Pepper</b></h4>
+        <p>Nightshade Family</p>
+      </div>
+
+      <div
+        class="card"
+        onclick="document.getElementById('id04').style.display='block'"
+      >
+        <img src="/images/green_bean.jpg" alt="Green Bean" />
+        <h4><b>Green Bean</b></h4>
+        <p>Legume Family</p>
+      </div>
+    </div>
+    <div class="add-button">
+      <button style="font-size: 24px" onclick="location.href='plant-form.html'">
+        Add More Plants <i class="fa fa-plus"></i>
+      </button>
+    </div>
+
+    <!--Modals-->
+    <div id="id01" class="w3-modal">
+      <div class="w3-modal-content w3-card-4">
+        <img src="/images/tomato.jpg" alt="Tomato" style="width: 100%" />
+        <header class="w3-container w3-green">
+          <span
+            onclick="document.getElementById('id01').style.display='none'"
+            class="w3-button w3-display-topright w3-black"
+            >&times;</span
+          >
+
+          <h2>Tomato</h2>
+        </header>
+        <div class="w3-container">
+          <p><b>Plant Type:</b> Fruit</p>
+          <p><b>Planting Date:</b> 04/01/2025</p>
+          <p>
+            <b>Notes:</b> The varieties of tomatoes planted this year include:
+            better boy, roma, and sun gold cherry.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="id02" class="w3-modal">
+      <div class="w3-modal-content w3-card-4">
+        <img src="/images/cucumber.jpeg" alt="Cucumber" style="width: 100%" />
+        <header class="w3-container w3-green">
+          <span
+            onclick="document.getElementById('id02').style.display='none'"
+            class="w3-button w3-display-topright w3-black"
+            >&times;</span
+          >
+          <h2>Cucumber</h2>
+        </header>
+        <div class="w3-container">
+          <p><b>Plant Type:</b> Fruit</p>
+          <p><b>Planting Date:</b> 06/01/2025</p>
+          <p>
+            <b>Notes:</b> The variety of cucumber planted this year is called
+            picklebush
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="id03" class="w3-modal">
+      <div class="w3-modal-content w3-card-4">
+        <img
+          src="/images/bell_pepper.jpg"
+          alt="Bell Pepper"
+          style="width: 100%"
+        />
+        <header class="w3-container w3-green">
+          <span
+            onclick="document.getElementById('id03').style.display='none'"
+            class="w3-button w3-display-topright w3-black"
+            >&times;</span
+          >
+
+          <h2>Bell Pepper</h2>
+        </header>
+        <div class="w3-container">
+          <p><b>Plant Type:</b> Fruit</p>
+          <p><b>Planting Date:</b> 04/01/2025</p>
+          <p>
+            <b>Notes:</b> The variety of bell pepper planted this year is called
+            california wonder.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="id04" class="w3-modal">
+      <div class="w3-modal-content w3-card-4">
+        <img
+          src="/images/green_bean.jpg"
+          alt="Green Bean"
+          style="width: 100%"
+        />
+        <header class="w3-container w3-green">
+          <span
+            onclick="document.getElementById('id04').style.display='none'"
+            class="w3-button w3-display-topright w3-black"
+            >&times;</span
+          >
+
+          <h2>Green Beans</h2>
+        </header>
+        <div class="w3-container">
+          <p><b>Plant Type:</b> Vegetable</p>
+          <p><b>Planting Date:</b> 05/01/2025</p>
+          <p>
+            <b>Notes:</b> The variety of green bean planted this year is called
+            provider.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
